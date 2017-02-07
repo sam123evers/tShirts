@@ -1,0 +1,120 @@
+
+* {
+  box-sizing: border-box;
+  font-size: 0;
+  --blue-border: rgb(114, 189, 236);
+  
+}
+
+p {
+  font-family: 'lato', sans-serif;
+}
+
+.material-icons {
+  display: inline-block;
+  max-width: 100%;
+  /*font-size: 40px;*/
+  padding-left: 5px;
+  text-align: center;
+  
+
+}
+
+.contentContainer {
+  max-width: 29%;
+  border: 3px solid rgb(114, 189, 236);
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 0 20px;
+}
+
+.buttonContainer {
+  max-width: 100%;
+
+}
+
+.flipIcon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-bottom: 3px solid rgb(114, 189, 236);
+  border-left: 3px solid rgb(114, 189, 236);
+}
+
+img {
+  max-width: 100%;
+  padding: 5%;
+}
+
+.buttonBox {
+  width: 20%;
+  display: inline-block;
+  border-top: 3px solid rgb(114, 189, 236);
+  border-bottom: 3px solid var(--blue-border);
+}
+
+.buttonBox:nth-child(even) {
+  border-left: 3px solid rgb(114, 189, 236);
+  border-right: 3px solid rgb(114, 189, 236);
+}
+
+.flipIcon:hover {
+  color: white;
+  background-color: rgb(114, 189, 236);
+}
+
+.buttonBox:hover {
+  color: white;
+  background-color: rgb(114, 189, 236);
+}
+
+.buttonBox:nth-child(3) {
+  position: relative;
+}
+
+.options {
+  position: absolute;
+  border: 3px solid var(--blue-border);
+  height: 400%;
+  width: 100%;
+  bottom: 110%;
+  right: 10%;
+  left: 10%;
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  color: rgb(114, 189, 236);
+}
+
+.options .material-icons {
+  display: block;
+}
+
+.buttonBox:nth-child(3):hover > .options {
+  opacity: 1;
+  visibility: visible;
+  transition: .5s;
+}
+
+h3 {
+  font-size: 30px;
+   color: var(--blue-border);
+   font-weight: bold;
+}
+
+.descriptionPriceContainer {
+  position: relative;
+}
+
+.description, .price {
+  display: inline-block;
+}
+
+.price {
+   position: absolute;
+   right: 0px;
+}
+
+@media (max-width: 600px) {
+
+}
